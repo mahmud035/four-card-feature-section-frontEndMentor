@@ -70,3 +70,35 @@ body {
 }
 
 /** Four Card Feature Section */
+.main-container {
+  background-color: var(--very-light-blue);
+}
+
+.card-feature-container {
+  min-height: 100vh;
+  padding: 5rem 0;
+}
+
+.heading-info {
+  text-align: center;
+  padding-bottom: 5rem;
+}
+
+.heading-info h1:nth-child(1) {
+  font-weight: 400;
+  color: var(--grayish-blue);
+}
+
+.heading-info h1:nth-child(2) {
+  color: var(--very-dark-blue);
+  font-weight: 600;
+}
+
+.heading-info > p {
+  width: 45%;
+  margin-inline: auto;
+  color: var(--grayish-blue);
+  line-height: 26px;
+  font-size: 15px;
+  padding: 1rem 0 0;
+}
