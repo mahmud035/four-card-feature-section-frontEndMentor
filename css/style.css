@@ -85,8 +85,8 @@ body {
 }
 
 .heading-info h1:nth-child(1) {
-  font-weight: 400;
-  color: var(--grayish-blue);
+  font-weight: 200;
+  color: var(--very-dark-blue);
 }
 
 .heading-info h1:nth-child(2) {
@@ -144,4 +144,19 @@ body {
   grid-area: calculator;
   border-top: 5px solid var(--blue);
   box-shadow: 0 10px 15px hsl(231, 16%, 91%);
+}
+
+.card .card-info > h3 {
+  color: var(--very-dark-blue);
+  font-size: 20px;
+}
+
+.card .card-info > p {
+  font-size: 13.6px;
+  color: var(--grayish-blue);
+  padding: 1rem 0 3rem;
+}
+
+.card > img {
+  margin-left: auto;
 }
