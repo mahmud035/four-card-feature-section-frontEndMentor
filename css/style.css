@@ -102,3 +102,46 @@ body {
   font-size: 15px;
   padding: 1rem 0 0;
 }
+
+/* Card Container */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    '. team .'
+    'supervisor team calculator'
+    'supervisor karma calculator'
+    '. karma .';
+  gap: 2rem;
+}
+
+.card {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.card.supervisor {
+  grid-area: supervisor;
+  border-top: 5px solid var(--cyan);
+  box-shadow: 0 10px 15px hsl(231, 16%, 91%);
+}
+
+.card.team {
+  grid-area: team;
+  border-top: 5px solid var(--red);
+  box-shadow: 0 10px 15px hsl(231, 16%, 91%);
+}
+
+.card.karma {
+  grid-area: karma;
+  border-top: 5px solid var(--orange);
+  box-shadow: 0 10px 15px hsl(231, 16%, 91%);
+}
+
+.card.calculator {
+  grid-area: calculator;
+  border-top: 5px solid var(--blue);
+  box-shadow: 0 10px 15px hsl(231, 16%, 91%);
+}
